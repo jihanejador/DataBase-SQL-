@@ -67,9 +67,9 @@ INSERT INTO courses(title,description,total_hours,id_prof) VALUES
 INSERT INTO students(dateofbrith,student_number,id_users,id_classes) VALUES 
 ('2000-05-10', 12345, 3, 1),
 ('2003-01-13', 32456, 2, 1),
-('2005-03-22', 23987, 4, 1);
+('2005-03-22', 23987, 2, 1);
 
 INSERT INTO enrollements(daate,status,id_students,id_courses) VALUES
-('2026-01-01', 'Actif', 1, 1),
-('2026-01-02', 'Actif', 1, 2),
-('2026-01-05', 'Actif', 2, 3);
+('2026-01-01', 'Actif', 10, 1),
+('2026-01-02', 'Actif', 11, 2),
+('2026-01-05', 'Actif', 12, 3);
