@@ -16,12 +16,13 @@ use management;
     name VARCHAR(255) NOT NULL,
     classrom_number INT 
  );
+ 
  CREATE TABLE courses(
     id INT PRIMARY KEY AUTO_INCREMENT,
     title VARCHAR(255) NOT NULL,
     description VARCHAR(255) NOT NULL,
     total_hours INT ,
-    id_users ,
+    id_users INT,
     FOREIGN KEY (id_users) REFERENCES users(id)
  );
  CREATE TABLE students(
@@ -42,3 +43,4 @@ use management;
     id_courses INT,
     FOREIGN KEY (id_courses) REFERENCES courses(id)
  );
+ ALTER TABLE courses CHANGE id_users id_prof INT ;
